@@ -72,15 +72,14 @@ const Dropdown = (props) => {
 
   const handleChange = (selectedOption) => {
     setSelectedOption(selectedOption)
-    console.log(selectedOption)
   }
 
   return(
     <div className='selector'>
-      <Creatable 
-        className='dropbox' 
-        placeholder='Expense Type' 
-        options={options} 
+      <Creatable
+        className='dropbox'
+        placeholder='Expense Type'
+        options={options}
         menuPlacement='bottom'
         maxMenuHeight={200}
         onChange={handleChange} />

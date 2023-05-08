@@ -37,24 +37,23 @@ function Home() {
   const userModal = useRef(null)
 
   useEffect(() => {
-    console.log('home', userExpense.range)
     userExpense.readRangeExpenses({
       startDate: new Date(),
       endDate: addDays(new Date(), 30),
       key: 'default'
     })
   }, [])
-  
-  
+
+
   const handleRemove = (id) => {
     userExpense.deleteExpense(id)
   }
 
-  
+
 
 
 return (
-  
+
   <div id='home-view'>
       <header id='home-header' />
 
@@ -87,13 +86,13 @@ return (
                 <button className='bar-chart-btn' onClick={() => setSelectedChart('Bar')}>
                   View Bar Graph
                 </button>
-              </section>      
+              </section>
           </div>
 
 
           <div className={`right ${!display && 'display'}`}>
 
-            <TableView 
+            <TableView
               handleRemove={handleRemove}
               />
             <div className='popup-list'>

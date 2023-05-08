@@ -1,14 +1,12 @@
-$main-color: #FFFFFF;
+$main-color: #ffffff;
 $secondary-color: #c1e48e;
 
-
 $btn-color: #fdcb9b;
-$btn-color-two: #0E867D;
-$white: #FFF;
-$orange: #FFA500;
+$btn-color-two: #0e867d;
+$white: #fff;
+$orange: #ffa500;
 
-
-#login-container{
+#login-container {
   height: 92vh;
   width: 100vw;
   display: flex;
@@ -19,21 +17,20 @@ $orange: #FFA500;
   overflow-y: hidden;
 }
 
-.entry-text{
+.entry-text {
   height: 2rem;
   width: 15rem;
   text-align: center;
   margin: 10px;
 }
 
-#login-reg-btns-container{
+#login-reg-btns-container {
   width: 21vw;
   display: flex;
-  // align-items: center;
   justify-content: space-evenly;
 }
 
-.login-style{
+.login-style {
   height: 3rem;
   width: 8rem;
   border-radius: 30%;
@@ -43,80 +40,71 @@ $orange: #FFA500;
   font-weight: 700;
 }
 
-.about-tool-tip{
+.about-tool-tip {
   margin-top: 2em;
 }
 
-#register-btn{
+#register-btn {
   display: flex;
   position: absolute;
   bottom: 0;
   margin: 70px;
 }
 
-.register-style{
+.register-style {
   height: 3rem;
   width: 8rem;
   border-radius: 30%;
   background-color: orange;
 }
 
-
-
-.header-logged-out{
+.header-logged-out {
   height: 15vh;
   width: 100vw;
 }
 
-.logged-out-box{
+.logged-out-box {
   height: 15vh;
   width: 100vw;
   font-size: 30px;
 }
 
-.logged-out-box h4{
+.logged-out-box h4 {
   font-size: 14px;
   margin: 0;
 }
 
-
-
-
-// !EditUser
-
-#edit-page{
+#edit-page {
   height: 100vh;
   width: 100vw;
   background-color: $main-color;
   overflow: hidden;
 }
 
-.user-info{
+.user-info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.edit-title{
+.edit-title {
   margin-top: 8;
   margin-bottom: 0;
 }
 
-.edit-input{
+.edit-input {
   margin-top: 0;
 }
 
-.update-user{
+.update-user {
   height: 30px;
   width: 150px;
   background-color: $btn-color;
   border-radius: 15%;
 }
 
-
-// !Register
-.registration-page{
+.registration-page {
   height: 90vh;
   width: 100vw;
   display: flex;
@@ -126,7 +114,7 @@ $orange: #FFA500;
   overflow-y: hidden;
 }
 
-.register-form{
+.register-form {
   height: 45vh;
   width: 20vw;
   display: flex;
@@ -135,25 +123,22 @@ $orange: #FFA500;
   align-items: center;
 }
 
-
-
-.reg-btn{
+.reg-btn {
   height: 3em;
   width: 13em;
   border-radius: 30%;
   background-color: $orange;
 }
 
-.back-to-login{
+.back-to-login {
   height: 3em;
   width: 13em;
   border-radius: 30%;
   background-color: $btn-color-two;
 }
 
-
-@media screen and (max-width: 408px){
-  .registration-page{
+@media screen and (max-width: 408px) {
+  .registration-page {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -163,13 +148,11 @@ $orange: #FFA500;
     overflow-y: hidden;
   }
 
-  .register-form{
+  .register-form {
     width: 100vw;
   }
 
-  .reg-login{
+  .reg-login {
     margin-top: 80px;
   }
-
-
 }
